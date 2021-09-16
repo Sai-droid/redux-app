@@ -12,13 +12,13 @@ function HomePage() {
   };
 
   return (
-    <>
+    <div>
       <h1>Balance:{balance}</h1>
       <h1>loan:{loan.toString()}</h1>
       <button className="button-style" disabled ={loan?true:false} onClick={onLoanHandle}>
         {loan?"LoanApplied":"ApplyLoan"}
       </button>
-    </>
+    </div>
   );
 }
 

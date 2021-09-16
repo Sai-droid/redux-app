@@ -1,24 +1,25 @@
-import {BrowserRouter,Route,NavLink,} from 'react-router-dom';
+import {BrowserRouter,Route,NavLink,Switch} from 'react-router-dom';
 import DepositPage from './pages/DepositPage';
 import HomePage from './pages/HomePage';
 import withDraw from './pages/WithDraw';
 import './App.css';
-
+import Items from './pages/Items';
+import RoutingPage from './pages/RoutingPage';
 function App() {
   return (
     <BrowserRouter>
+   
     <div className="App">
-      <header className="  App-header">
-       <ul className=" ui-style App-link">
-         <li className="li-style"><NavLink  exact activeClassName = "navlink-style" className="navlink-style" to ='/' >Home</NavLink></li>
-         <li className="li-style"><NavLink  exact activeClassName = "navlink-style" className="navlink-style" to ='/Deposit'>Deposit</NavLink></li>
-         <li className="li-style"><NavLink  exact  activeClassName = "navlink-style"  className="navlink-style" to ='/withDraw'>WithDraw</NavLink></li>
-       </ul>
-       
+      <div className = "App-header">
+      <RoutingPage />
+      </div>
+       <Switch>
        <Route exact path ="/" component={HomePage}/>
        <Route exact path ="/Deposit" component={DepositPage}/>
        <Route exact path ="/WithDraw" component={withDraw}/>
-      </header>
+       <Route exact path ="/items" component={Items}/>
+        </Switch>
+    
     </div>
     </BrowserRouter>
 

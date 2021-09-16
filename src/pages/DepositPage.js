@@ -18,11 +18,11 @@ function DepositPage() {
         })
     }
     return (
-        <>
+        <div className="dep-style">
         <h1>Balance:{balance}</h1>
         <button className ="button-style" onClick={onDepositPageHandle}>Credit</button>
         <button className ="button-style"disabled ={loan?true:false} onClick={onLoanHandle}>{loan?"loanApplied":"applyloan"}</button>
-        </>
+        </div>
     )
 }
 
