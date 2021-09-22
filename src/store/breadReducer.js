@@ -50,8 +50,8 @@ const initialState ={
           "name": "Courgette and cheddar soda bread",
           "price": 345
         }
-      ],
-      totalcost:0
+      ]
+     
 }
 
 
@@ -59,17 +59,7 @@ function breadReducer(state = initialState, action) {
 
 
     switch (action.type) {
-        case "addToCart":
-          const items = state.data;
-        return {
-          ...state,
-
-          totalcost:state.totalcost + action.payload+1
-        }
-    case "removeFromCart":
-        return {totalcost:state.totalcost - action.payload}
-
-
+    
       default:
         return state;
     }

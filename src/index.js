@@ -8,8 +8,10 @@ import {Provider} from 'react-redux'
 import reducer from './store/reducer'
 import loanReducer from './store/loanReducer';
 import breadReducer from './store/breadReducer';
+import costReducer from './store/costReducer';
 
-const store = createStore(combineReducers({reducer,loanReducer,breadReducer}));
+
+const store = createStore(combineReducers({reducer,loanReducer,breadReducer,costReducer}));
 
 ReactDOM.render(
   <React.StrictMode>

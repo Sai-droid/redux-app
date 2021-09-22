@@ -1,48 +1,70 @@
-import React,{useEffect,useState} from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import breadReducer from "../store/breadReducer";
+import costReducer from '../store/costReducer'
+import ProductPagee from "./ProductPagee";
+import Button from "@mui/material/Button";
+import HomeTwoToneIcon from "@mui/icons-material/HomeTwoTone";
+import { NavLink } from "react-router-dom";
+import Cost from "./Cost";
 
 function Items() {
-   const items = useSelector((state) => state.breadReducer.data);
-  const totalcost = useSelector((state) => state.breadReducer.totalcost);
+  const items = useSelector((state) => state.breadReducer.data);
+  const totalcost = useSelector((state) => state.costReducer.cost);
 
-  // const [items,setItems]=useState([])
-  
   const dispatch = useDispatch();
 
-//   const adding =()=>{
-// setItems(...things)
-//   }
-
   const addHandle = (e) => {
-    // adding();
     dispatch({
       type: "addToCart",
 
-      payload: e
+      payload: e,
     });
-   
+  };
+  const subHandle = (e) => {
+    dispatch({
+      type: "removeFromCart",
+
+      payload: e,
+    });
   };
 
   return (
     <div>
-      <h1>totalcost:{totalcost}</h1>
+      
+      <div className="check-out">
+       
+        <Button size="small" color="primary" variant="outlined">
+
+          <NavLink to="/home" className="navlink-style">
+            <div > <HomeTwoToneIcon  />
+           <div> Home</div>
+             </div>
+           
+          </NavLink>
+        </Button>
+      </div>
+
       <br />
       <div className="button-wrapper">
         {items.map((item) => {
-        
           return (
-            
-            <div className="item-price">
-              <h1>{item.price}</h1>
-              <button className="button-price" onClick={
-                () => addHandle(item.price)
-                }>+</button>
+            <div>
+              <ProductPagee
+                name={item.name}
+                title={item.title}
+                price={item.price}
+                imagee={item.image}
+                description={item.description}
+                onClickadd={addHandle}
+                onClicksub={subHandle}
+              />
             </div>
           );
         })}
       </div>
     </div>
+  
   );
 }
 
