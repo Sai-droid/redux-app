@@ -131,3 +131,35 @@ background-color: thistle;
   border: 1px solid black;
 
 }
+
+.list-items{
+display:flex;
+  width:100px;
+  height:50px;
+  border: 1px solid black;
+justify-content: center;
+align-items: center;
+padding:15px,15px;
+
+}
+
+body {
+  background-color: pink;
+}
+
+/* @media screen and (min-width: 480px) {
+
+  body {
+    background-color:cornsilk;
+  }
+  
+} */
+
+@media screen and (max-width: 500px) {
+
+  body {
+    background-color:cornsilk;
+  }
+  
+}
+

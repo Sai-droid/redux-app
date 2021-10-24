@@ -1,0 +1,218 @@
+const methodname = async axios.get('url')
+const response = await (method.data)
+
+
+  const getProfile = async() =>{
+    const response = await axios.get("https://api.github.com/users/sai-droid");
+    const data = await response.data;
+    
+
+    setProfile({
+      followers: data.followers,
+      publicRepos: data.public_repos,
+    })
+  }
+
+
+  useEffect(() => {
+    getProfile();
+  }, []);
+
+const methodName = async() =>{
+    const response = await axios.get('url');
+    const data = await response.data;
+}
+
+
+useEffect(()=>{
+methodName();
+},[])
+
+let sum = arr.reduce((acc,cur)=>{
+  return acc + cur;
+})
+
+
+
+avg = sum/Array.length;
+
+
+
+const fact = useMemo(()=>{
+
+
+for(let i =0;i<=fact;i++){
+
+result = result *i;
+
+}
+
+return result;
+
+},[num])
+
+
+useEffect(()=>{
+
+console.log('mounting phase')
+
+return () => {
+  console.log('unmounting')
+}
+
+},[input])
+
+
+state
+reducer
+
+const[state,dispatch] = useReducer(reducer,action)
+
+useHistory
+useLocation
+
+usecontext 
+
+event.target.val
+
+
+const NumberContext = React.createContext();
+
+
+function app(){
+
+
+
+
+  return(
+    <NumberContext.Provider value ={42}>
+    <div>
+    <Display/>
+    </NumberContext.Provider>
+
+
+  )
+}
+
+
+
+
+
+
+function Display(){
+
+  return (
+
+<NumberContext.Consumer>
+
+
+{ value => <div> the answer is {value} </div>}
+
+</NumberContext.Consumer>
+
+
+  )
+}
+
+
+const {Provider , Consumer} = React.createContext();
+
+const {id,usernamer} = useParams
+
+
+
+const useLogger = (value) =>{
+  useEffect(()=>{
+    console.log(value)
+  },[value])
+}
+const useUpdateLogger = (value) => {
+  useEffect(() => {
+    console.log(value);
+  }, [value]);
+};
+
+
+Object.entries()
+
+
+const hoc = ()=>()=>{
+
+
+
+  const {
+
+  }
+
+
+  return <comp />
+}
+
+function getPerson() {
+  null;
+}
+
+
+let { firstName, lastName } = getPerson() || {};
+
+In the case it wont give error if we use empty flower brackets
+
+
+let person ={
+  name:'charan',
+  age:'22',
+  address:{
+    city:'hyderabad'
+  }
+}
+use of react
+usememo,
+useeffect,
+usecallback
+usecontext 
+useReducer
+
+typescript
+redux:
+
+functional component
+testing
+jest enzyme 
+
+scenario
+
+await async 
+
+promise 
+
+virtual dom 
+
+
+function currying
+
+
+let multiply = (x,y) =>{
+
+
+return x*y
+
+}
+
+
+
+let multiplyByTwo = multiply.bind(this,2)
+
+multiplyByTwo(5);
+
+
+let multyiply = (x)=>{
+
+  return (y) =>{
+    return x*y;
+  }
+}
+
+let multiplyByTwo = multiply(2)
+
+
+multiplyByTwo(5);

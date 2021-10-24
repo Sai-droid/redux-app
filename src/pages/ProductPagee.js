@@ -10,6 +10,8 @@ import Typography from '@material-ui/core/Typography';
 import AddShoppingCartTwoToneIcon from '@material-ui/icons/AddShoppingCartTwoTone';
 import RemoveShoppingCartTwoToneIcon from '@material-ui/icons/RemoveShoppingCartTwoTone';
 // import { AddShoppingCartIcon } from '@mui/icons-material';
+
+
 const useStyles = makeStyles({
   root: {
     width: 200,
@@ -29,7 +31,7 @@ export default function ProductPagee(props) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card key ={props.index} className={classes.root}>
       <CardActionArea>
         <CardMedia
           className={classes.media}

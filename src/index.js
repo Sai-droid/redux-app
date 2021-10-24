@@ -3,19 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {createStore,combineReducers} from 'redux'
 import {Provider} from 'react-redux'
-import reducer from './store/reducer'
-import loanReducer from './store/loanReducer';
-import breadReducer from './store/breadReducer';
-import costReducer from './store/costReducer';
+import configureStore from './store/store'
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { BrowserRouter} from "react-router-dom";
 
-
-const store = createStore(combineReducers({reducer,loanReducer,breadReducer,costReducer}));
 
 ReactDOM.render(
   <React.StrictMode>
-  <Provider store ={store}>  <App /></Provider>
+  <Provider store ={configureStore()}>  <BrowserRouter><App /></BrowserRouter></Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

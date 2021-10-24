@@ -1,0 +1,131 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "fname": "Sebastian",
+      "lname": "Eschweiler",
+      "email": "sebastian@codingthesmartway.com"
+    },
+    {
+      "name": "charan ",
+      "num": 1,
+      "fact": 1,
+      "id": 2
+    },
+    {
+      "name": "charan ",
+      "num": 1,
+      "fact": 1,
+      "id": 3
+    },
+    {
+      "name": "CHARAN KALAKONDA",
+      "num": 1,
+      "fact": 1,
+      "id": 4
+    },
+    {
+      "name": "CHARAN KALAKONDA",
+      "num": "",
+      "fact": 1,
+      "id": 5
+    },
+    {
+      "name": "CHARAN KALAKONDA",
+      "num": "4",
+      "fact": 1,
+      "id": 6
+    },
+    {
+      "name": "CHARAN KALAKONDA",
+      "num": "",
+      "fact": 24,
+      "id": 7
+    },
+    {
+      "num": "",
+      "fact": 24,
+      "id": 8
+    },
+    {
+      "num": 1,
+      "fact": 1,
+      "id": 9
+    },
+    {
+      "num": "2",
+      "fact": 1,
+      "id": 10
+    },
+    {
+      "num": "",
+      "fact": 2,
+      "id": 11
+    },
+    {
+      "num": "5",
+      "fact": 1,
+      "id": 12
+    },
+    {
+      "num": "",
+      "fact": 120,
+      "id": 13
+    },
+    {
+      "num": 1,
+      "fact": 1,
+      "id": 14
+    },
+    {
+      "name": "",
+      "password": "",
+      "id": 15
+    },
+    {
+      "name": "",
+      "password": "",
+      "id": 16
+    },
+    {
+      "name": "",
+      "password": "",
+      "id": 17
+    },
+    {
+      "name": "",
+      "password": "",
+      "id": 18
+    },
+    {
+      "name": "",
+      "password": "kalakonda",
+      "id": 19
+    },
+    {
+      "name": "s",
+      "password": "kalakonda",
+      "id": 20
+    },
+    {
+      "name": "sa",
+      "password": "kalakonda",
+      "id": 21
+    },
+    {
+      "name": "sa",
+      "password": "kalakonda",
+      "id": 22
+    },
+    {
+      "name": "sai",
+      "password": "kalakonda",
+      "id": 23
+    },
+    {
+      "name": "saic",
+      "password": "kalakonda",
+      "id": 24
+    }
+  ]
+}

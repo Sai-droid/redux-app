@@ -10,6 +10,8 @@ function RoutingPage() {
          <li className="li-style"><NavLink  exact activeClassName = "navlink-style" className="navlink-style" to ='/Deposit'>Deposit</NavLink></li>
          <li className="li-style"><NavLink  exact  activeClassName = "navlink-style"  className="navlink-style" to ='/withDraw'>WithDraw</NavLink></li>
          <li className="li-style"><NavLink  exact  activeClassName = "navlink-style"  className="navlink-style" to ='/items'>Items</NavLink></li>
+         <li className="li-style"><NavLink  exact  activeClassName = "navlink-style"  className="navlink-style" to ='/headerinfo'>HeaderInfo</NavLink></li>
+
        </ul>
 
         </div>

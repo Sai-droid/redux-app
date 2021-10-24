@@ -117,6 +117,7 @@ export default function SignUp() {
             ><NavLink exact to ='/'>
               Sign Up</NavLink>
             </Button>
+            
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <Link href="#" variant="body2">

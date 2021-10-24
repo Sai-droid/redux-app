@@ -7,6 +7,8 @@ import ListPrice from './ListPrice';
 
 
 function DepositPage() {
+
+
     const balance = useSelector((state)=>state.reducer.balance);
     const loan = useSelector((state)=>state.loanReducer.loan);
 
@@ -14,12 +16,15 @@ function DepositPage() {
     const [price,setPrice] = useState(false)
 
     const dispatch = useDispatch();
+
     const onDepositPageHandle =()=>{
         dispatch({
             type:"Deposit",
             payload:10
         })
     }
+
+
     const onLoanHandle =()=>{
         dispatch({
             type:"Apply"
@@ -56,3 +61,5 @@ function DepositPage() {
 }
 
 export default DepositPage
+
+
