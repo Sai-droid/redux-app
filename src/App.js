@@ -21,7 +21,8 @@ function App() {
 
     
 const style ={
-  color:'teal',
+  color:'cyan',
+  // boxShadow: '0px -15px 10px -15px #111',
   ':hover': {
     border: '1px solid black',
     
@@ -44,8 +45,8 @@ const style ={
         <marquee> <h3 style ={style}>"Any fool can know. The point is to understand."</h3></marquee >
 
           <RoutingPage />
-          <Cost />
-          <UseContext />
+
+          {/* <UseContext /> */}
           {/* <HeaderInfo /> */}
         </div>
         <Switch>

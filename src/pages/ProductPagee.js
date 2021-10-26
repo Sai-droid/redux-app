@@ -18,12 +18,14 @@ const useStyles = makeStyles({
     padding: "5px",
     margin: "5px",
     height:"95%",
-    border: "1px solid teal",
-    boxshadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
+    border: " thick double #32a1ce",
+    boxshadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+
 
   },
   media: {
     height: 100,
+   
   },
 });
 
@@ -34,6 +36,12 @@ export default function ProductPagee(props) {
     <Card key ={props.index} className={classes.root}>
       <CardActionArea>
         <CardMedia
+        style ={{
+          ':hover': {
+            backgroundColor: 'black',
+            color:'black'
+          }
+        }}
           className={classes.media}
           image={props.imagee}
           title={props.title}
@@ -42,12 +50,17 @@ export default function ProductPagee(props) {
        <h5>{props.description}</h5>
       </CardActionArea>
       <CardActions>
-        <Button size="small"  variant ="outlined"  onClick ={()=>{
+        <Button size="small"  variant ="outlined" style ={{
+           ':hover': {
+            backgroundColor: 'black',
+            color:'black'
+          }
+        }}  onClick ={()=>{
             props.onClickadd(props.price)
-        }}> <AddShoppingCartTwoToneIcon /> add</Button>
+        }}> <AddShoppingCartTwoToneIcon color='primary' /> ADD</Button>
           <Button size="small"  variant ="outlined" onClick ={()=>{
             props.onClicksub(props.price)
-        }}> <RemoveShoppingCartTwoToneIcon />REmove</Button>
+        }}> <RemoveShoppingCartTwoToneIcon color='secondary' />REMOVE</Button>
       </CardActions>
     </Card>
   );

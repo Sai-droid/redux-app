@@ -23,8 +23,9 @@ function costReducer(state = initialState, action) {
         ...state,
 
         cost: state.cost > 0 ? state.cost - action.payload : 0,
-        totalItems:state.totalItems-1,
-        totalCost: state.totalCost - action.payload
+        totalItems:state.totalItems>0?state.totalItems-1:0,
+        totalCost: state.totalCost>0?state.totalCost - action.payload:0
+       
       };
       case "PLACE THE ORDER":
         return {

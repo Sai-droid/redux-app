@@ -40,11 +40,11 @@ color:teal;
 width:200px;
 list-style-type: none;
 padding : 5px;
-border:2px solid whitesmoke
+border:2px solid teal
 }
 
 .navlink-style{
-  color:teal;
+  color:#32a1ce;
   text-decoration: none;
 }
 
@@ -144,7 +144,7 @@ padding:15px,15px;
 }
 
 body {
-  background-color: pink;
+  background-color:whitesmoke;
 }
 
 /* @media screen and (min-width: 480px) {

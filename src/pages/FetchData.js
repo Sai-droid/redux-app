@@ -32,7 +32,7 @@ function FetchData() {
 
   
   return (
-    <div className="App">
+    <div data-test ='component' className="App">
       <header className="App-header">
         <h3>Using axios</h3>
         <h4 style={{ color: "pink" }}>

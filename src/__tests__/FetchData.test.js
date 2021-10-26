@@ -9,8 +9,8 @@ test("Fetch Data component", () => {
 
 const wrapper = shallow(<FetchData/>)
 
-expect(wrapper.exists()).toBe();
-
+const fetchComponent = wrapper.find("[data-test='component']")
+expect(fetchComponent.length).toBe(1);
 });
 
 
